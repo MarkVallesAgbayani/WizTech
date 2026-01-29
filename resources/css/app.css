@@ -1,0 +1,71 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+*{
+    font-family: "LINE Seed JP", sans-serif;
+    font-style: normal;
+}
+.hero{
+    background-image: url(/resources/assets/images/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* .about-us{
+    background-image: url(/resources/assets/images/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}    */
+.img-about{
+    width: 400px;
+    height: 300px;
+}
+.img-about, img{
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+}
+.projects{
+    background-image: url(/resources/assets/images/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.project-image img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover; /* Ensures the image covers the div. */
+    cursor: pointer;
+}
+.project-image{
+    margin-right: auto;
+    margin-left: auto;
+}
+.tech img{
+    object-fit: cover;
+    width: 400px;
+}
+.loginimg{
+    width: 400px;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+    object-fit: cover;
+}
+svg{
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+}
