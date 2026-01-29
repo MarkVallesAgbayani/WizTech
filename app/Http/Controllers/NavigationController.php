@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Product;
+use Illuminate\Support\Facades\Auth;
+
 
 class NavigationController extends Controller
 {
@@ -21,8 +24,15 @@ class NavigationController extends Controller
         return view('signup');
     }
 
-    public function dashboard() {
-        return view('dashboard');
+    public function orders() {
+        $user = Auth::user();
+        return view('orders', compact('user'));
+
     }
 
+    public function dashboard() {
+        $user = Auth::user();
+        $products = Product::all();
+        return view('dashboard', compact('user', 'products'));
+    }
 }

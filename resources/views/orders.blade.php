@@ -30,11 +30,11 @@
                 <ul class="p-2 flex flex-col gap-2 w-55 mr-auto ml-auto">
                     <li class="p-1.5 rounded-2xl flex gap-2 bg-blue-900 border-gray-100 border-1">
                             <svg class="svg1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M152 160C174.1 160 192 177.9 192 200L192 248C192 270.1 174.1 288 152 288L104 288C81.9 288 64 270.1 64 248L64 200C64 177.9 81.9 160 104 160L152 160zM344 288L296 288C273.9 288 256 270.1 256 248L256 200C256 177.9 273.9 160 296 160L344 160C366.1 160 384 177.9 384 200L384 248C384 270.1 366.1 288 344 288zM536 288L488 288C465.9 288 448 270.1 448 248L448 200C448 177.9 465.9 160 488 160L536 160C558.1 160 576 177.9 576 200L576 248C576 270.1 558.1 288 536 288zM536 480L488 480C465.9 480 448 462.1 448 440L448 392C448 369.9 465.9 352 488 352L536 352C558.1 352 576 369.9 576 392L576 440C576 462.1 558.1 480 536 480zM344 352C366.1 352 384 369.9 384 392L384 440C384 462.1 366.1 480 344 480L296 480C273.9 480 256 462.1 256 440L256 392C256 369.9 273.9 352 296 352L344 352zM152 480L104 480C81.9 480 64 462.1 64 440L64 392C64 369.9 81.9 352 104 352L152 352C174.1 352 192 369.9 192 392L192 440C192 462.1 174.1 480 152 480z"/></svg>
-                        <a href="">Dashboard</a>
+                        <a href="{{ route('dashboard') }}">Dashboard</a>
                     </li>
                     <li class="p-1.5 rounded-2xl flex gap-2 bg-blue-900 border-gray-100 border-1">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M439.4 96L448 96C483.3 96 512 124.7 512 160L512 512C512 547.3 483.3 576 448 576L192 576C156.7 576 128 547.3 128 512L128 160C128 124.7 156.7 96 192 96L200.6 96C211.6 76.9 232.3 64 256 64L384 64C407.7 64 428.4 76.9 439.4 96zM376 176C389.3 176 400 165.3 400 152C400 138.7 389.3 128 376 128L264 128C250.7 128 240 138.7 240 152C240 165.3 250.7 176 264 176L376 176zM256 320C256 302.3 241.7 288 224 288C206.3 288 192 302.3 192 320C192 337.7 206.3 352 224 352C241.7 352 256 337.7 256 320zM288 320C288 333.3 298.7 344 312 344L424 344C437.3 344 448 333.3 448 320C448 306.7 437.3 296 424 296L312 296C298.7 296 288 306.7 288 320zM288 448C288 461.3 298.7 472 312 472L424 472C437.3 472 448 461.3 448 448C448 434.7 437.3 424 424 424L312 424C298.7 424 288 434.7 288 448zM224 480C241.7 480 256 465.7 256 448C256 430.3 241.7 416 224 416C206.3 416 192 430.3 192 448C192 465.7 206.3 480 224 480z"/></svg>
-                        <a href="{{route('orders.index') }}">My Orders</a>
+                        <a href="{{ route('orders.index') }}">My Orders</a>
                     </li>
                     <li class="p-1.5 rounded-2xl flex gap-2 bg-blue-900 border-gray-50 border-1">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M512 176C520.8 176 528 183.2 528 192L528 224L112 224L112 192C112 183.2 119.2 176 128 176L512 176zM528 288L528 448C528 456.8 520.8 464 512 464L128 464C119.2 464 112 456.8 112 448L112 288L528 288zM128 128C92.7 128 64 156.7 64 192L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 192C576 156.7 547.3 128 512 128L128 128zM144 408C144 421.3 154.7 432 168 432L216 432C229.3 432 240 421.3 240 408C240 394.7 229.3 384 216 384L168 384C154.7 384 144 394.7 144 408zM288 408C288 421.3 298.7 432 312 432L376 432C389.3 432 400 421.3 400 408C400 394.7 389.3 384 376 384L312 384C298.7 384 288 394.7 288 408z"/></svg>
@@ -52,45 +52,33 @@
 
         <section>
             <h1 class="flex text-blue-950 p-2">Welcome back again, {{ $user->name }}!</h1>
-            <div class="font-bold text-center text-5xl flex justify-center"><p>Products:</p></div>
-            <div class="p-5">
-                <div>
-                    <div class="flex flex-wrap justify-center items-center gap-5">
-                        @foreach ($products as $product)
-                        <div class="flex flex-col border-1 bg-blue-900 text-white list-none p-3 w-100 h-100 text-2xl rounded-2xl ml-20">
-                            <li class="font-bold text-3xl text-center mb-10">
-                                {{ $product->name }}
-                            </li>
+          
+<div class="p-6 w-full">
+    <h1 class="text-2xl font-bold mb-4">My Orders</h1>
 
-                            <li class="flex">
-                                <p class="font-30">Description:</p>{{ $product->description}}
-                            </li>
-
-                            
-                            <li class="flex">
-                               <p class="font-30">Price:</p> {{ $product->price}}
-                            </li>
-
-                            
-                            <li class="flex">
-                               <p class="font-30">Quantity:</p> {{ $product->quantity}}
-                            </li>
-                            <form method="POST" action="{{ route ('cart.add', $product->id) }}">
-                                @csrf
-                                    <input type="hidden" name="product_id" value="{{ $product->id }}">
-                                <button class="border-1 rounded-2xl w-70 text-md p-2 cursor-pointer mt-5 ml-10" type="submit">Add to Cart</button>
-                            </form>
-                        </div>
-                    @endforeach
-                    </div>
-                @if(session('success'))
-                    <div class="text-center p-3 mt-10" style="color: green">{{ session('success') }}</div>
-                @endif
-
-                @if(session('error'))
-                    <div class="text-center p-3 mt-10" style="color: red">{{ session('error') }}</div>
-                @endif
-                </div>       
+    @if($orders->isEmpty())
+        <p>No orders yet.</p>
+    @else
+        <table class="w-full border">
+            <thead>
+                <tr class="border">
+                    <th class="border p-2">Product</th>
+                    <th class="border p-2">Quantity</th>
+                    <th class="border p-2">Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach($orders as $order)
+                    <tr class="border">
+                        <td class="border p-2">{{ $order->product_name }}</td>
+                        <td class="border p-2">{{ $order->quantity }}</td>
+                        <td class="border p-2">₱{{ number_format($order->price, 2) }}</td>
+                    </tr>
+                @endforeach
+            </tbody>
+        </table>
+    @endif
+</div>
         </section>
     </div>
     </body>
