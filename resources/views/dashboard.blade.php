@@ -23,9 +23,9 @@
         @endif
     </head>
     <body>
-
-        <sidebar class="flex flex-col gap-10 p-3 bg-cyan-900 text-white h-screen w-60">
-            <div class="font-bold text-center text-3xl mt-5"><h3>Wiz<span class="text-blue-400 font-extrabold">Tech</span></h3></div>
+    <div class="flex">
+        <sidebar class="flex flex-col gap-10 p-3 bg-blue-900 text-white h-screen w-60">
+            <div class="font-extra-bold text-center text-3xl mt-5"><h3>Wiz<span class="text-blue-400 font-extrabold">Tech</span></h3></div>
             <div class="nav">
                 <ul class="p-2 flex flex-col gap-2 w-55 mr-auto ml-auto">
                     <li class="p-1.5 rounded-2xl flex gap-2 bg-blue-900 border-gray-100 border-1">
@@ -49,5 +49,10 @@
                 </form>
             </div>
         </sidebar>
+
+        <section class="">
+            <h1>asdasd</h1>
+        </section>
+    </div>
     </body>
 </html>
