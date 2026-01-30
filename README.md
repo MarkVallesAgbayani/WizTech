@@ -58,25 +58,25 @@ php artisan serve
 The application will run at http://127.0.0.1:8000
 
 **Routes Overview**
-/Landing page
+1. /Landing page
 
-/login	User login
+2. /login	User login
 
-/signup	User registration
+3. /signup	User registration
 
-/dashboard	User dashboard (auth required)
+4. /dashboard	User dashboard (auth required)
 
-/orders	View cart/orders
+5. /orders	View cart/orders
 
-/cart/add/{id}	Add product to cart
+6. /cart/add/{id}	Add product to cart
 
-/cart/increase/{id}	Increase product quantity
+7. /cart/increase/{id}	Increase product quantity
 
-/cart/reduce/{id}	Reduce product quantity
+8. /cart/reduce/{id}	Reduce product quantity
 
-/cart/remove/{id}	Remove product from cart
-Usage
+9. /cart/remove/{id}	Remove product from cart
 
+**Usage**
 - Register a new account
 - Browse products on the homepage
 - Add products to your cart
