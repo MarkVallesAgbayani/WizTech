@@ -52,34 +52,55 @@
 
         <section>
             <h1 class="flex text-blue-950 p-2">Welcome back again, {{ $user->name }}!</h1>
-          
-<div class="p-6 w-full">
+
+    <div class="p-6 w-full">
     <h1 class="text-2xl font-bold mb-4">My Orders</h1>
 
-    @if($orders->isEmpty())
+    {{-- @if($orders->isEmpty())
         <p>No orders yet.</p>
-    @else
-        <table class="w-full border">
-            <thead>
-                <tr class="border">
-                    <th class="border p-2">Product</th>
-                    <th class="border p-2">Quantity</th>
-                    <th class="border p-2">Price</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach($orders as $order)
-                    <tr class="border">
-                        <td class="border p-2">{{ $order->product_name }}</td>
-                        <td class="border p-2">{{ $order->quantity }}</td>
-                        <td class="border p-2">₱{{ number_format($order->price, 2) }}</td>
-                    </tr>
-                @endforeach
+    @else --}}
+    <table class="w-full border">
+        <thead>
+            <tr class="border-b">
+                <th class="p-2">Product</th>
+                <th class="p-2">Price</th>
+                <th class="p-2">Quantity</th>
+                <th class="p-2">Action</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach($cart as $id => $item)
+            <tr class="border-b text-center">
+                <td class="p-2">{{ $item['name'] }}</td>
+                <td class="p-2">₱{{ $item['price'] }}</td>
+                <td class="p-2">{{ $item['quantity'] }}</td>
+
+                <td class="p-2 flex gap-2 justify-center">
+                    <!-- Increase -->
+                    <form action="{{ route('cart.increase', $id) }}" method="POST">
+                        @csrf
+                        <button class="px-2 bg-green-600 text-white rounded">+</button>
+                    </form>
+
+                    <!-- Decrease -->
+                    <form action="{{ route('cart.reduce', $id) }}" method="POST">
+                        @csrf
+                        <button class="px-2 bg-yellow-500 text-white rounded">−</button>
+                    </form>
+
+                    <!-- Delete -->
+                    <form action="{{ route('cart.remove', $id) }}" method="POST">
+                        @csrf
+                        <button class="px-2 bg-red-600 text-white rounded">🗑</button>
+                    </form>
+                </td>
+            </tr>
+            @endforeach
             </tbody>
         </table>
-    @endif
+        </div>        
+    </section>
 </div>
-        </section>
-    </div>
     </body>
 </html>

@@ -68,17 +68,20 @@
 
                             
                             <li class="flex">
-                               <p class="font-30">Price:</p> {{ $product->price}}
+                                <p class="font-30">Price:</p> {{ $product->price}}
                             </li>
 
                             
                             <li class="flex">
-                               <p class="font-30">Quantity:</p> {{ $product->quantity}}
+                                <p class="font-30">Quantity:</p> {{ $product->quantity}}
                             </li>
                             <form method="POST" action="{{ route ('cart.add', $product->id) }}">
                                 @csrf
                                     <input type="hidden" name="product_id" value="{{ $product->id }}">
-                                <button class="border-1 rounded-2xl w-70 text-md p-2 cursor-pointer mt-5 ml-10" type="submit">Add to Cart</button>
+                                <button class="border-1 rounded-2xl w-70 text-md p-2 cursor-pointer mt-5 ml-10" type="submit" 
+                                    @if($product->quantity < 1) disabled @endif>
+                                        {{ $product->quantity < 1 ? 'Out of Stock' : 'Add to Cart' }}
+                                </button>
                             </form>
                         </div>
                     @endforeach
