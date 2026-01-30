@@ -77,14 +77,14 @@
                     </div>
 
                     <div class="project2 project-image">
-                        <a href="https://aitomanabi.com/" target="_blank"><img src="{{ asset('images/shopify.png') }}" alt="Project 1" class="project-image"></a>
+                        <a href="https://www.shopify.com/ph" target="_blank"><img src="{{ asset('images/shopify.png') }}" alt="Project 1" class="project-image"></a>
                         <p class="mt-5 w-100"></p>
                             Developed a fully functional e-commerce platform using Shopify, enabling product management, secure payments, and a seamless shopping experience.
                         </p>
                     </div>
 
                     <div class="project3 project-image">
-                        <a href="https://aitomanabi.com/" target="_blank"><img src="{{ asset('images/shopee.png') }}" alt="Project 1" class="project-image"></a>
+                        <a href="https://shopee.ph/" target="_blank"><img src="{{ asset('images/shopee.png') }}" alt="Project 1" class="project-image"></a>
                         <p class="mt-5 w-100"></p>
                             Built a Shopee-inspired sales and inventory management system, streamlining product listings, order tracking, and customer transactions.
                         </p>
@@ -93,6 +93,28 @@
             </section>
         </div>
 
+        <section class="relative isolate overflow-hidden bg-blue-900 px-6 py-24 sm:py-32 lg:px-8">
+            <div class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,var(--color-indigo-500),transparent)] opacity-10"></div>
+            <div class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-gray-900 shadow-xl ring-1 shadow-indigo-500/5 ring-white/5 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
+            <div class="mx-auto max-w-2xl lg:max-w-4xl">
+                <img src="{{ asset('images/kenny.webp') }}" alt="" class="mx-auto h-12" />
+                <figure class="mt-10">
+                <blockquote class="text-center text-xl/8 font-semibold text-white sm:text-2xl/9">
+                    <p>"Working with this platform has been a fantastic experience! The team is professional, reliable, and truly goes above and beyond. I’m impressed with the quality and attention to detail in everything they deliver."</p>
+                </blockquote>
+                <figcaption class="mt-10">
+                    <img src="{{ asset('images/kenny.png') }}" alt="" class="mx-auto size-10 rounded-full" />
+                    <div class="mt-4 flex items-center justify-center space-x-3 text-base">
+                    <div class="font-semibold text-white">Kenny "The Great" Soriano</div>
+                    <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="fill-white">
+                        <circle r="1" cx="1" cy="1" />
+                    </svg>
+                <div class="text-gray-400">CEO of All About Pets</div>
+                    </div>
+                </figcaption>
+                </figure>
+            </div>
+        </section>
 
         <footer class="h-80">
             <div>
