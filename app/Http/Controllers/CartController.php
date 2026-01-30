@@ -32,15 +32,12 @@ public function add($id)
         return redirect()->back()->with('error', 'Product not found');
     }
 
-    // Check if product is in stock
     if ($product->quantity < 1) {
         return redirect()->back()->with('error', 'Product out of stock');
     }
 
-    // Decrease stock in database
     $product->decrement('quantity');
 
-    // Add to session cart
     $cart = Session::get('cart', []);
 
     if (isset($cart[$id])) {
