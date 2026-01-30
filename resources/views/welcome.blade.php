@@ -50,7 +50,7 @@
     </div>
 
         <section class="h-screen about-us text-black bg-white">
-            <p class="text-center text-5xl pt-10 font-bold text-blue-800">About us</p>
+            <p class="text-center text-5xl pt-10 font-bold text-black">About <span class="text-blue-800">us</span></p>
             <p class="text-center text-sm pt-10 font-light w-200 mr-auto ml-auto">At <span class="font-bold text-blue-800">WizTech,</span> we are passionate about transforming ideas into intelligent technology solutions. 
             From innovative software development to cutting-edge digital systems, we empower businesses to operate smarter, faster, and more efficiently. 
             Our team of experts combines creativity, technical expertise, and a forward-thinking mindset to deliver solutions that make a real impact. 
