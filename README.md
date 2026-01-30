@@ -1,4 +1,5 @@
 **WizTech Web Application**
+
 WizTech is a simple e-commerce web application built with Laravel 12 and PHP 8.3. It allows users to browse products, add them to a cart, and manage orders. The project demonstrates CRUD operations, session-based cart functionality, and authentication.
 
 **Features**
