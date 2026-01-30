@@ -48,6 +48,24 @@
             </div>
         </section>
     </div>
+            <div class="bg-blue-900 py-24 sm:py-32">
+                <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                    <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
+                    <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                        <dt class="text-base/7 text-gray-400">Transactions every 24 hours</dt>
+                        <dd class="order-first text-3xl font-semibold tracking-tight text-white sm:text-5xl">300+</dd>
+                    </div>
+                    <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                        <dt class="text-base/7 text-gray-400">Assets under holding</dt>
+                        <dd class="order-first text-3xl font-semibold tracking-tight text-white sm:text-5xl">₱50 Million</dd>
+                    </div>
+                    <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                        <dt class="text-base/7 text-gray-400">New users annually</dt>
+                        <dd class="order-first text-3xl font-semibold tracking-tight text-white sm:text-5xl">10,000</dd>
+                    </div>
+                    </dl>
+                </div>
+            </div>
 
         <section class="h-screen about-us text-black bg-white">
             <p class="text-center text-5xl pt-10 font-bold text-black">About <span class="text-blue-800">us</span></p>
@@ -61,6 +79,8 @@
                 <img class="img-about" src="{{ asset('images/about3.jpg') }}" alt="About us image" srcset="">
             </div>
         </section>
+
+
 
         <div class="projects h-screen text-white">
             <div>
