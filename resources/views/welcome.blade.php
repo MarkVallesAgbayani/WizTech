@@ -120,7 +120,7 @@
             <div>
                 <p class="text-center mt-10 font-bold text-5xl w-160 mr-auto ml-auto">Ready to <span class="text-blue-800">innovate</span> with us? Let’s build smarter solutions <span class="text-blue-800">together.</span></p>
                 <ul class="flex gap-2.5 justify-center items-center mt-10">
-                    <li class="border-1 rounded-3xl w-40 p-2 text-center"><a href="">Sign up now</a></li>
+                    <li class="border-1 rounded-3xl w-40 p-2 text-center"><a href="{{ 'signup' }}">Sign up now</a></li>
                     <li class="text-white font-bold rounded-3xl w-40 p-2 text-center bg-blue-800" ><a href="">Contact us</a></li>
                 </ul>
             </div>
