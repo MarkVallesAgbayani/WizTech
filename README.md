@@ -20,7 +20,7 @@ WizTech is a simple e-commerce web application built with Laravel 12 and PHP 8.3
 **Follow these steps to set up the project locally:
 **
 1. Clone the Repository
-git clone https://github.com/yourusername/wiztech.git
+git clone (https://github.com/MarkVallesAgbayani/WizTech.git)
 cd wiztech
 
 2. Install PHP Dependencies
