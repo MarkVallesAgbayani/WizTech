@@ -32,12 +32,18 @@ cp .env.example .env
 
 
 Update database settings in .env:
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=wiztech_db
-DB_USERNAME=root
-DB_PASSWORD=
+
+=> DB_CONNECTION=mysql
+
+=> DB_HOST=127.0.0.1
+
+=> DB_PORT=3306
+
+=> DB_DATABASE=wiztech_db
+
+=> DB_USERNAME=root
+
+=> DB_PASSWORD=
 
 4. Generate Application Key
 php artisan key:generate
@@ -52,13 +58,21 @@ The application will run at http://127.0.0.1:8000
 
 **Routes Overview**
 /Landing page
+
 /login	User login
+
 /signup	User registration
+
 /dashboard	User dashboard (auth required)
+
 /orders	View cart/orders
+
 /cart/add/{id}	Add product to cart
+
 /cart/increase/{id}	Increase product quantity
+
 /cart/reduce/{id}	Reduce product quantity
+
 /cart/remove/{id}	Remove product from cart
 Usage
 
