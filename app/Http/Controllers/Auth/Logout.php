@@ -16,6 +16,6 @@ class Logout extends Controller
         $user = $request->user();
 
         Auth::logout($user);
-        return redirect()->route("signup")->with('success', 'You have been logged out successfully.');
+        return redirect()->route(route: "login")->with('success', 'You have been logged out successfully.');
     }
 }
